@@ -1,0 +1,19 @@
+{
+  "name": "unit-testing-cohort-team",
+  "version": "1.0.0",
+  "description": "https://www.geeksforgeeks.org/basics-of-api-testing-using-postman/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muthu-Mathiyazhagan/unit-testing-cohort-team.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muthu-Mathiyazhagan/unit-testing-cohort-team/issues"
+  },
+  "homepage": "https://github.com/Muthu-Mathiyazhagan/unit-testing-cohort-team#readme"
+}
