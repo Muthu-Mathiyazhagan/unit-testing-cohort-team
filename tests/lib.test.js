@@ -19,3 +19,15 @@ describe("FizzBuzz : I90494 : Atharsh S", () => {
     })
 
 })
+
+//I90490
+describe("evenornot : I90490 : Aarthi S", () => {
+    it("should return 'Even' if input is even", () => {
+        const result = lib.evenornot(10);
+        expect(result).toBe('Even');
+    })
+    it("should return 'Odd' if input is odd", () => {
+        const result = lib.evenornot(5);
+        expect(result).toBe('Odd');
+    })
+})
