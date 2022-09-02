@@ -43,3 +43,21 @@ describe("oddornot : I90491 : Kannathal AR", () => {
         expect(result).toBe('Even');
     })
 })
+
+//90502
+describe('validateEmail : 90502 : Vijay M', () => {
+    it('It Should return Valid Email if the Input is Contains anystring@anystring.anystring pattern', () => {
+        const result = lib.validateEmail("vijay98430@gmail.com");
+        expect(result).toBe('valid email');
+    })
+
+    it('It Should return InValid Email if the Input is Contains anystring@anystring.anystring pattern', () => {
+        const result = lib.validateEmail("vijay98430#gmail.com");
+        expect(result).toBe('invalid email');
+    })
+
+    it('It Should return InValid Email if the Input is Contains anystring@anystring.anystring pattern', () => {
+        const result = lib.validateEmail("vijay98430#gmail");
+        expect(result).toBe('invalid email');
+    })
+})
