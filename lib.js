@@ -75,3 +75,8 @@ module.exports.sameornot = function(n)
     else
      return "not same";
 }
+
+//I90512
+module.exports.VoteEligibility= function(n){
+    return (n>=18)?"Eligible":"Not Eligible";
+}
