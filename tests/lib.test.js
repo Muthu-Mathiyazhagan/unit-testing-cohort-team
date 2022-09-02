@@ -101,3 +101,15 @@ describe('sameornot : i90510 : Bhagya', () =>{
         expect(result).toBe("not same");
     })
 })
+
+//I90512
+describe('Vote Eligibilty : I90512 : Nishanth N S',()=>{
+    it('It should return eligible',()=>{
+        const temp = lib.VoteEligibility(19);
+        expect(temp).toBe('Eligible')
+    } )
+    it('It should return not eligible',()=>{
+        const temp = lib.VoteEligibility(13);
+        expect(temp).toBe('Not Eligible')
+    } )
+})
