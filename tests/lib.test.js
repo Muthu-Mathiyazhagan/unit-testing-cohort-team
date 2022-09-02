@@ -74,3 +74,13 @@ describe('factorial : 90511 : Dhanaranjanii', () => {
         expect(result).toBe(120);
     })
 })
+    
+//90501
+
+    describe('checkIsEven : 90501 : Pavan ', () => {
+
+        it('If input is multiple of 2 it should reply true', () => {
+            const result = lib.checkIsEven(2)
+            expect(result).toBe(true);
+        })
+    })
