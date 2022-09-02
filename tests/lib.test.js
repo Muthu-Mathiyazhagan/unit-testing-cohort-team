@@ -61,3 +61,16 @@ describe('validateEmail : 90502 : Vijay M', () => {
         expect(result).toBe('invalid email');
     })
 })
+
+//90511
+describe('factorial : 90511 : Dhanaranjanii', () => {
+    it('It Should return factorial of a number', () => {
+        const result = lib.factorial(2);
+        expect(result).toBe(2);
+    })
+
+    it('It Should return factorial of a number', () => {
+        const result = lib.factorial(5);
+        expect(result).toBe(120);
+    })
+})
