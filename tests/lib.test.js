@@ -31,3 +31,15 @@ describe("evenornot : I90490 : Aarthi S", () => {
         expect(result).toBe('Odd');
     })
 })
+
+//I90491
+describe("oddornot : I90491 : Kannathal AR", () => {
+    it("should return 'Odd' if input is odd", () => {
+        const result = lib.oddornot(13);
+        expect(result).toBe('Odd');
+    })
+    it("should return 'Even' if input is even", () => {
+        const result = lib.oddornot(50);
+        expect(result).toBe('Even');
+    })
+})
