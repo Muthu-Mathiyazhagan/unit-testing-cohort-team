@@ -23,3 +23,12 @@ module.exports.evenornot=function(num){
         return "Odd";
      }
 }
+
+//I90491
+module.exports.oddornot=function(num){
+    if(num%2==1){
+       return "Odd";
+    }else{
+       return "Even";
+    }
+}
