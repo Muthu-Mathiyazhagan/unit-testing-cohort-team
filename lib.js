@@ -14,3 +14,12 @@ module.exports.FizzBuzz = function (number) {
     }
 
 }
+
+//I90490
+module.exports.evenornot=function(num){
+     if(num%2==0){
+        return "Even";
+     }else{
+        return "Odd";
+     }
+}
