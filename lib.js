@@ -63,3 +63,15 @@ module.exports.checkIsEven = function (num){
     if(num%2==0) return true;
     else return false;
 }
+
+
+//i90510
+
+module.exports.sameornot = function(n)
+{
+    let a=10;
+    if(n==a)
+     return "same";
+    else
+     return "not same";
+}
