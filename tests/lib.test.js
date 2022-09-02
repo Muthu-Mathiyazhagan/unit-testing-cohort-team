@@ -84,3 +84,20 @@ describe('factorial : 90511 : Dhanaranjanii', () => {
             expect(result).toBe(true);
         })
     })
+
+    //i90510
+
+describe('sameornot : i90510 : Bhagya', () =>{
+    it('It should return same if no is same', () =>{
+        const result = lib.sameornot(10);
+        expect(result).toBe("same");
+    })
+    it('It should return same if no is same', () =>{
+        const result = lib.sameornot(11);
+        expect(result).toBe("not same");
+    })
+    it('It should return same if no is same', () =>{
+        const result = lib.sameornot(13);
+        expect(result).toBe("not same");
+    })
+})
