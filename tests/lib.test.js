@@ -23,11 +23,11 @@ describe("FizzBuzz : I90494 : Atharsh S", () => {
 //I90490
 describe("evenornot : I90490 : Aarthi S", () => {
     it("should return 'Even' if input is even", () => {
-        const result = lib.evenornot(10);
+        const result = lib.evenornot(2);
         expect(result).toBe('Even');
     })
     it("should return 'Odd' if input is odd", () => {
-        const result = lib.evenornot(5);
+        const result = lib.evenornot(1);
         expect(result).toBe('Odd');
     })
 })
@@ -35,11 +35,11 @@ describe("evenornot : I90490 : Aarthi S", () => {
 //I90491
 describe("oddornot : I90491 : Kannathal AR", () => {
     it("should return 'Odd' if input is odd", () => {
-        const result = lib.oddornot(13);
+        const result = lib.oddornot(1);
         expect(result).toBe('Odd');
     })
     it("should return 'Even' if input is even", () => {
-        const result = lib.oddornot(50);
+        const result = lib.oddornot(2);
         expect(result).toBe('Even');
     })
 })
@@ -109,7 +109,7 @@ describe('Vote Eligibilty : I90512 : Nishanth N S',()=>{
         expect(temp).toBe('Eligible')
     } )
     it('It should return not eligible',()=>{
-        const temp = lib.VoteEligibility(13);
+        const temp = lib.VoteEligibility(17);
         expect(temp).toBe('Not Eligible')
     } )
 })
