@@ -121,5 +121,8 @@ module.exports.primeornot=function(n)
   }
 }
 
-
+//I90488
+module.exports.odd = function (n) {
+  return (n % 2 ==0) ? 'No' : 'Yes';
+}
 
