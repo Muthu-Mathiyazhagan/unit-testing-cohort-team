@@ -57,32 +57,6 @@ module.exports.VoteEligibility = function (n) {
   return n >= 18 ? 'Eligible' : 'Not Eligible'
 }
 
-
-//90498
-module.exports.primeornot=function(n)
-{
-
-  if (n==1)
-  {
-    return false;
-  }
-  else if(n == 2)
-  {
-    return true;
-  }
-  else
-  {
-    for(var x = 2; x < n; x++)
-    {
-      if(n % x == 0)
-      {
-        return false;
-      }
-    }
-    return true;  
-  }
-}
-
 //I90489
 module.exports.divisible_by_5 = function (n) {
   return (n % 5 ==0) ? 'Yes' : 'No';
@@ -121,6 +95,30 @@ module.exports.Armstrong=function(n)
     else {
         return false;
     }
+}
+//90498
+module.exports.primeornot=function(n)
+{
+
+  if (n==1)
+  {
+    return false;
+  }
+  else if(n == 2)
+  {
+    return true;
+  }
+  else
+  {
+    for(var x = 2; x < n; x++)
+    {
+      if(n % x == 0)
+      {
+        return false;
+      }
+    }
+    return true;  
+  }
 }
 
 
