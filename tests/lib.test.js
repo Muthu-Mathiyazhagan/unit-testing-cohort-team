@@ -48,17 +48,17 @@ describe("oddornot : I90491 : Kannathal AR", () => {
 describe('validateEmail : 90502 : Vijay M', () => {
     it('It Should return Valid Email if the Input is Contains anystring@anystring.anystring pattern', () => {
         const result = lib.validateEmail("vijay98430@gmail.com");
-        expect(result).toBe('valid email');
+        expect(result).toBe('Valid Email');
     })
 
     it('It Should return InValid Email if the Input is Contains anystring@anystring.anystring pattern', () => {
         const result = lib.validateEmail("vijay98430#gmail.com");
-        expect(result).toBe('invalid email');
+        expect(result).toBe('Invalid Email');
     })
 
     it('It Should return InValid Email if the Input is Contains anystring@anystring.anystring pattern', () => {
         const result = lib.validateEmail("vijay98430#gmail");
-        expect(result).toBe('invalid email');
+        expect(result).toBe('Invalid Email');
     })
 })
 
@@ -90,15 +90,11 @@ describe('factorial : 90511 : Dhanaranjanii', () => {
 describe('sameornot : i90510 : Bhagya', () =>{
     it('It should return same if no is same', () =>{
         const result = lib.sameornot(10);
-        expect(result).toBe("same");
-    })
-    it('It should return same if no is same', () =>{
-        const result = lib.sameornot(11);
-        expect(result).toBe("not same");
+        expect(result).toBe("Same");
     })
     it('It should return same if no is same', () =>{
         const result = lib.sameornot(13);
-        expect(result).toBe("not same");
+        expect(result).toBe("not Same");
     })
 })
 
@@ -134,3 +130,14 @@ describe('primeornot : 90498 : Sailochana R', () => {
     })
 })
 
+//I90489
+describe('divisible_by_5 : I90489 : Reshma S',()=>{
+    it('It should return Yes',()=>{
+        const temp = lib.divisible_by_5(10);
+        expect(temp).toBe('Yes')
+    } )
+    it('It should return No',()=>{
+        const temp = lib.divisible_by_5(17);
+        expect(temp).toBe('No')
+    } )
+})

@@ -84,6 +84,6 @@ module.exports.primeornot=function(n)
 }
 
 //I90489
-module.exports.divisibility_by_5 = function (n) {
+module.exports.divisible_by_5 = function (n) {
   return (n % 5 ==0) ? 'Yes' : 'No';
 }
