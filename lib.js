@@ -87,3 +87,14 @@ module.exports.primeornot=function(n)
 module.exports.divisible_by_5 = function (n) {
   return (n % 5 ==0) ? 'Yes' : 'No';
 }
+
+//I90487
+module.exports.evenodd = function (num) {
+if(num % 2 == 0) {
+    return 1;
+}
+else {
+    return 0;
+}
+}
+
