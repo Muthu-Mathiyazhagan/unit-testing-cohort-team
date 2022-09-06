@@ -87,3 +87,10 @@ module.exports.primeornot=function(n)
 module.exports.divisible_by_5 = function (n) {
   return (n % 5 ==0) ? 'Yes' : 'No';
 }
+
+//I90499
+module.exports.VoteEligibility= (age)=>{
+    if(age>18) return true
+    else if(age<=0) return msg="age must be a positive value";
+    else return false
+};
