@@ -110,26 +110,6 @@ describe('Vote Eligibilty : I90512 : Nishanth N S',()=>{
     } )
 })
 
-//90498
-describe('primeornot : 90498 : Sailochana R', () => {
-    it('It should return False if the Input is equal to 1' , () => {
-        const result=lib.primeornot(1);
-        expect(result).toBe(false);
-    })
-    it('It should return True if the Input is equal to 2' , () => {
-        const result=lib.primeornot(2);
-        expect(result).toBe(true);
-    })
-    it('It should return False if the Input is divisible by x' , () => {
-        const result=lib.primeornot(15);
-        expect(result).toBe(false);
-    })
-    it('It should return True if the Input is not divisible by x' , () => {
-        const result=lib.primeornot(13);
-        expect(result).toBe(true);
-    })
-})
-
 //I90489
 describe('divisible_by_5 : I90489 : Reshma S',()=>{
     it('It should return Yes',()=>{
@@ -170,5 +150,26 @@ describe('armstrong:90500:Anil_C',()=>{
     it('it should gives messae if the number is less than zero',()=>{
         const result=lib.Armstrong(-12);
         expect(result).toBe('please enter positive number');
+    })
+})
+
+
+//90498
+describe('primeornot : 90498 : Sailochana R', () => {
+    it('It should return False if the Input is equal to 1' , () => {
+        const result=lib.primeornot(1);
+        expect(result).toBe(false);
+    })
+    it('It should return True if the Input is equal to 2' , () => {
+        const result=lib.primeornot(2);
+        expect(result).toBe(true);
+    })
+    it('It should return False if the Input is divisible by x' , () => {
+        const result=lib.primeornot(15);
+        expect(result).toBe(false);
+    })
+    it('It should return True if the Input is not divisible by x' , () => {
+        const result=lib.primeornot(13);
+        expect(result).toBe(true);
     })
 })
