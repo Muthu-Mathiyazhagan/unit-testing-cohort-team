@@ -158,30 +158,17 @@ describe('Eligibility vote : 90499 : Neela Kanta Reddy',()=>{
 })
 
 //90500
-
-module.exports.Armstrong=function(n)
-{
-    let sum = 0;
-    let temp = n;
-    if (n<0)
-    {
-        return 'please enter positive number';
-    }
-    while (temp > 0) {
-        // finding the one's digit
-        let remainder = temp % 10;
-
-        sum += remainder * remainder * remainder;
-
-        // removing last digit from the number
-        temp = parseInt(temp / 10); // convert float into integer
-    }
-    // check the condition
-    if (sum == n) {
-        return true;
-    }
-    else {
-        return false;
-    }
-}
-
+describe('armstrong:90500:Anil_C',()=>{
+    it('it should return true if input number is armstrong',()=>{
+        const result=lib.Armstrong(153);
+        expect(result).toBe(true);
+    })
+    it('it should return false if the number is not an armstrong number',()=>{
+        const result=lib.Armstrong(152);
+        expect(result).toBe(false);
+    })
+    it('it should gives messae if the number is less than zero',()=>{
+        const result=lib.Armstrong(-12);
+        expect(result).toBe('please enter positive number');
+    })
+})
