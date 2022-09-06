@@ -82,3 +82,8 @@ module.exports.primeornot=function(n)
     return true;  
   }
 }
+
+//I90489
+module.exports.divisibility_by_5 = function (n) {
+  return (n % 5 ==0) ? 'Yes' : 'No';
+}
