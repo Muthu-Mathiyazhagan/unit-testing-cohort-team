@@ -173,3 +173,15 @@ describe('primeornot : 90498 : Sailochana R', () => {
         expect(result).toBe(true);
     })
 })
+
+//I90488
+describe("odd : I90488 : Sneha M", () => {
+    it("should return 'Yes' if input is odd", () => {
+        const result = lib.odd(27);
+        expect(result).toBe('Yes');
+    })
+    it("should return 'No' if input is even", () => {
+        const result = lib.odd(10);
+        expect(result).toBe('No');
+    })
+})
