@@ -54,8 +54,8 @@ module.exports.sameornot = function (n) {
 }
 
 //I90512
-module.exports.VoteEligibility = function (n) {
-  return n >= 18 ? 'Eligible' : 'Not Eligible'
+module.exports.VoteEligibility1 = function (n) {
+  return n >= 18 ? 'Eligible' : 'Not Eligible';
 }
 
 //I90489
