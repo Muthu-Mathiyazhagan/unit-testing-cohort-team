@@ -255,7 +255,7 @@ describe('Vowel : I90486 : Priyadharshini M', () => {
 })
 
 // I90487
-describe('evenodd : 90487 :  Sakthi Praba V', () => {
+describe('evenodd : I90487 :  Sakthi Praba V', () => {
     it('It Should return 1 if the Input is even number', () => {
         const result = lib.evenodd(2);
         expect(result).toBe(1);
