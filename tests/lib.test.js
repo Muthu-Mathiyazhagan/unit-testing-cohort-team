@@ -209,3 +209,23 @@ describe("divisible_by_100 : I90493 : Stanly C", () => {
         expect(result).toBe('No');
     })
 })
+
+//90496
+
+describe('countVowel : 90496 : Anbu V', () => {
+    it('It Should return the count of vowels', () => {
+        const result = lib.countVowel("anbu");
+        expect(result).toBe(2);
+    })
+
+
+    it('It Should return the count of vowels', () => {
+        const result = lib.countVowel("vijesh");
+        expect(result).toBe(2);
+    })
+
+    it('It Should return the count of vowels', () => {
+        const result = lib.countVowel("stanly");
+        expect(result).toBe(1);
+    })
+})
