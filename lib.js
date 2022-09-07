@@ -126,3 +126,8 @@ module.exports.odd = function (n) {
   return (n % 2 ==0) ? 'No' : 'Yes';
 }
 
+//I90495
+module.exports.divisible_by_11 = function (n) {
+  return (n % 11 ==0) ? 'Yes' : 'No';
+}
+
