@@ -133,6 +133,6 @@ module.exports.divisible_by_11 = function (n) {
 
 //I90493
 
-module.exports.divisible_by_11 = function (n) {
+module.exports.divisible_by_100 = function (n) {
   return (n % 100 ==0) ? 'Yes' : 'No';
 }

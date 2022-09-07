@@ -185,3 +185,15 @@ describe("odd : I90488 : Sneha M", () => {
         expect(result).toBe('No');
     })
 })
+
+//I90495
+describe("divisible_by_11 : I90495 : Vijesh S", () => {
+    it("should return 'Yes' if input is divisible by 11", () => {
+        const result = lib.divisible_by_11(22);
+        expect(result).toBe('Yes');
+    })
+    it("should return 'No' if input is not divisible by 11", () => {
+        const result = lib.divisible_by_11(10);
+        expect(result).toBe('No');
+    })
+})
