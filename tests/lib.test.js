@@ -197,3 +197,15 @@ describe("divisible_by_11 : I90495 : Vijesh S", () => {
         expect(result).toBe('No');
     })
 })
+
+//I90493
+describe("divisible_by_100 : I90493 : Stanly C", () => {
+    it("should return 'Yes' if input is divisible by 100", () => {
+        const result = lib.divisible_by_100(200);
+        expect(result).toBe('Yes');
+    })
+    it("should return 'No' if input is not divisible by 100", () => {
+        const result = lib.divisible_by_100(19);
+        expect(result).toBe('No');
+    })
+})
