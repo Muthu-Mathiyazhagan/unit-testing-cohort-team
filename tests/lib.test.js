@@ -101,11 +101,11 @@ describe('sameornot : i90510 : Bhagya', () =>{
 //I90512
 describe('Vote Eligibilty : I90512 : Nishanth N S',()=>{
     it('It should return eligible',()=>{
-        const temp = lib.VoteEligibility(19);
+        const temp = lib.VoteEligibility1(19);
         expect(temp).toBe('Eligible')
     } )
     it('It should return not eligible',()=>{
-        const temp = lib.VoteEligibility(17);
+        const temp = lib.VoteEligibility1(17);
         expect(temp).toBe('Not Eligible')
     } )
 })
