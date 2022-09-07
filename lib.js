@@ -150,3 +150,18 @@ module.exports.countVowel = function(str) {
     }
     return count
 }
+
+// I90486
+module.exports.vowel = function (ch){
+  if((ch>='a' && ch<='z') || (ch>='A' && ch<='Z'))
+ {
+      if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+           return "Yes";
+      else if(ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U')
+           return "Yes";
+      else
+           return "No";
+  }
+  else
+      return "Invalid";
+}   

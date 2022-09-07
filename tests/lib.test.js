@@ -229,3 +229,27 @@ describe('countVowel : 90496 : Anbu V', () => {
         expect(result).toBe(1);
     })
 })
+
+//I90486
+describe('Vowel : 90486 : Priyadharshini M', () => {
+    it('If a lowercase character a,e,i,o,u is given it Should return Yes', () => {
+        const result = lib.vowel('a');
+        expect(result).toBe("Yes");
+    })
+
+
+    it('If a uppercase character A,E,I,O,U is given it Should return Yes', () => {
+        const result = lib.vowel('E');
+        expect(result).toBe("Yes");
+    })
+
+    it('If except a,e,i,o,u other character is given it Should return No', () => {
+        const result = lib.vowel('b');
+        expect(result).toBe('No');
+    })
+
+    it('If otherthan character is given it Should return Invalid', () => {
+        const result = lib.vowel(8);
+        expect(result).toBe('Invalid');
+    })
+})
