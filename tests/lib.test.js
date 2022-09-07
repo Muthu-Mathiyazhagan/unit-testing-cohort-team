@@ -253,3 +253,17 @@ describe('Vowel : I90486 : Priyadharshini M', () => {
         expect(result).toBe('Invalid');
     })
 })
+
+// I90487
+describe('evenodd : 90487 :  Sakthi Praba V', () => {
+    it('It Should return 1 if the Input is even number', () => {
+        const result = lib.evenodd(2);
+        expect(result).toBe(1);
+    })
+
+
+    it('It Should return 0 if the Input is odd number', () => {
+        const result = lib.evenodd(1);
+        expect(result).toBe(0);
+    })
+})
