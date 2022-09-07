@@ -136,3 +136,17 @@ module.exports.divisible_by_11 = function (n) {
 module.exports.divisible_by_100 = function (n) {
   return (n % 100 ==0) ? 'Yes' : 'No';
 }
+
+
+//90496
+const vowels = ["a", "e", "i", "o", "u"]
+
+module.exports.countVowel = function(str) {
+    let count = 0;
+    for (let letter of str.toLowerCase()) {
+        if (vowels.includes(letter)) {
+            count++;
+        }
+    }
+    return count
+}
