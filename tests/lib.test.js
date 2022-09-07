@@ -231,7 +231,7 @@ describe('countVowel : 90496 : Anbu V', () => {
 })
 
 //I90486
-describe('Vowel : 90486 : Priyadharshini M', () => {
+describe('Vowel : I90486 : Priyadharshini M', () => {
     it('If a lowercase character a,e,i,o,u is given it Should return Yes', () => {
         const result = lib.vowel('a');
         expect(result).toBe("Yes");
