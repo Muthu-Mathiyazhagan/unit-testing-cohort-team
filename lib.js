@@ -11,6 +11,7 @@ module.exports.FizzBuzz = function (number) {
   }
 }
 
+
 //I90490
 module.exports.evenornot = function (num) {
   return num % 2 == 0 ? 'Even' : 'Odd'
@@ -136,3 +137,13 @@ module.exports.divisible_by_11 = function (n) {
 module.exports.divisible_by_11 = function (n) {
   return (n % 100 ==0) ? 'Yes' : 'No';
 }
+
+// I90487
+module.exports.evenodd = function (num) {
+  if(num % 2 == 0) {
+      return 1;
+  }
+  else {
+      return 0;
+  }
+  }
