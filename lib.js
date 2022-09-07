@@ -136,3 +136,17 @@ module.exports.divisible_by_11 = function (n) {
 module.exports.divisible_by_100 = function (n) {
   return (n % 100 ==0) ? 'Yes' : 'No';
 }
+
+//I90509
+module.exports.divi_10 = function(n) 
+{
+    if(n % 10 == 0) {
+        return "Yes";
+    }
+    else {
+        return "No";
+    }
+
+    let sum = n+m;
+    return sum;
+}
